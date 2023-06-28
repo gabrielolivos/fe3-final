@@ -6,6 +6,7 @@ import Contact from "./Routes/Contact";
 import Home from "./Routes/Home";
 import Detail from "./Routes/Detail";
 import { useContextoDental } from "./Context";
+import Favs from "./Routes/Favs";
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
             <Route path='/home' element={<Home/>}/>
             <Route path='/dentist/:id' element={<Detail/>} />
             <Route path='/contacto' element={<Contact/>} />
-            <Route path='/favs' element={<div></div>} />
+            <Route path='/favs' element={<Favs/>} />
 
           </Routes>
           <Footer/>

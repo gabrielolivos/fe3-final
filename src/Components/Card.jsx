@@ -1,11 +1,33 @@
 import React from "react";
 import miImagen from "../Assets/Images/doctor.jpg"
 import { Link } from "react-router-dom";
+import { useContextoDental } from "../Context";
+
 
 const Card = ({dname,dusername,did}) => {
 
+const {stateDental, dispatchDental} = useContextoDental()
 
+
+
+
+  
   const addFav = ()=>{
+
+    let oldfav = stateDental.favs
+
+    let newfav = [...oldfav, {
+        dname: dname,
+        dusername: dusername,
+        did: did
+      
+    }]
+
+
+    dispatchDental({type:"SET_FAV", payload: newfav })
+
+   localStorage.setItem('favs', JSON.stringify(newfav))
+
     // Aqui iria la logica para agregar la Card en el localStorage
   }
 

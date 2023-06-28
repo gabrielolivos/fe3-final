@@ -6,7 +6,7 @@ const ContextoDental = createContext();
 const InitialStateDental = {
     listaDentistas:[],
     dentista: {},
-    favs: [],
+    favs: [{}],
     dark: true
 }
 
