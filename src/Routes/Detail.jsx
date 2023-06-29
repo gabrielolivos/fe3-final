@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react'
 import { useContextoDental } from '../Context'
 import { useParams } from 'react-router-dom'

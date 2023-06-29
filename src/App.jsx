@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 
 import { Route, Routes } from "react-router-dom";
 import Footer from "./Components/Footer";
