@@ -1,5 +1,5 @@
 import React from "react";
-import miImagen from "../Assets/Images/doctor.jpg"
+import miImagen from "../Assets/Images/doctor.jpg";
 import { Link } from "react-router-dom";
 import { useContextoDental } from "../Context";
 
