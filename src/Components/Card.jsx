@@ -12,7 +12,7 @@ const {stateDental, dispatchDental} = useContextoDental()
 
 
   
-  const addFav = ()=>{
+  const addFav = (e)=>{
 
     let oldfav = stateDental.favs
 
@@ -27,6 +27,8 @@ const {stateDental, dispatchDental} = useContextoDental()
     dispatchDental({type:"SET_FAV", payload: newfav })
 
    localStorage.setItem('favs', JSON.stringify(newfav))
+
+   e.target.disabled=true
 
     // Aqui iria la logica para agregar la Card en el localStorage
   }
