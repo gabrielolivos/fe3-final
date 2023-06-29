@@ -25,7 +25,7 @@ function App() {
             <Route path='/favs' element={<Favs/>} />
 
           </Routes>
-          <Footer/>
+          <Footer />
       </div>
   );
 }

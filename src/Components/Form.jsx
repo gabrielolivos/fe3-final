@@ -51,7 +51,7 @@ const Form = () => {
   }
 
   return (
-    <div>
+    <div className="formform">
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder='Full name' onBlur={handleBlurName}/>
         <input type="text" placeholder='Email'onBlur={handleBlurEmail} />

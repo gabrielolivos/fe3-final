@@ -5,7 +5,7 @@ const FormError = ({emailCorrect, nameCorrect}) => {
 
 
   return (
-    <div>
+    <div className="formerror">
         <h4>Por favor verifique su informacion nuevamente</h4>
         {!emailCorrect && <h5>El email no tiene un formato valido</h5>}
         {!nameCorrect && <h5>El nombre debe tener mas de 5 caracteres</h5>}

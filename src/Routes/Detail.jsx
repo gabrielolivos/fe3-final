@@ -17,18 +17,8 @@ const Detail = () => {
     .then(res=> dispatchDental({type:'GET_DENTIST', payload: res.data}))
   },[])
  
-  /*
   return (
-    <div>
-        {pokeState.pokemon.name}
-        <img src={pokeState.pokemon.sprites?.front_default} alt="" />
-    </div>
-  )
-  
-  Consumiendo el parametro dinamico de la URL deberan hacer un fetch a un user en especifico
-*/
-  return (
-    <>
+    <div className='divDetail'>
       <h1>Detail Dentist id </h1>
       <table>
         <tr>
@@ -45,7 +35,7 @@ const Detail = () => {
         </tr>
         
       </table>
-    </>
+    </div>
   )
 }
 
